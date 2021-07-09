@@ -64,9 +64,7 @@ new_header = column_data.iloc[0]
 column_data = column_data[1:]
 column_data.columns = new_header
 
-print(column_data)
 table_names = column_data['table_name'].unique()
-print(table_names)
 
 for table_name in table_names:
     print('Table: ', table_name)
